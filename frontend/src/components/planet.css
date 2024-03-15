@@ -4,26 +4,35 @@
       align-items: center;
       background-color: #333;
       color: white;
-      padding: 20px;
+      padding: 80px;
+      /* Increased padding for more spacious appearance */
       border-radius: 10px;
-      width: 300px;
+      width: 90%;
+      /* Set width to a percentage for responsiveness */
+      max-width: 400px;
+      /* Set maximum width for larger screens */
       margin: auto;
 }
 
 .input-container {
       display: flex;
       width: 100%;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      /* Increased margin bottom for better separation */
 }
 
 .input-container input[type="text"] {
       flex: 1;
-      padding: 10px;
-      margin-right: 10px;
+      padding: 8px;
+      border-radius: 13px;
+      /* Increased padding for input */
+      margin-right: 20px;
+      /* Increased margin right for better spacing */
 }
 
 .search-btn {
-      padding: 10px;
+      padding: 8px;
+      /* Increased padding for button */
       background-color: #007bff;
       color: white;
       border: none;
@@ -35,21 +44,47 @@
 }
 
 .select-container {
-      width: 100%;
+      width: 30%;
       margin-bottom: 10px;
+      /* Increased margin bottom for better separation */
 }
 
 select {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
+      padding: 8px;
+      /* Increased padding for select */
+      margin-bottom: 20px;
+      /* Increased margin bottom for better separation */
 }
 
 h1 {
-      margin-top: 20px;
+      margin-top: 15px;
+      /* Increased margin top for better spacing */
       text-align: center;
 }
 
 p {
       text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+      .container {
+            padding: 20px;
+            /* Adjusted padding for smaller screens */
+      }
+
+      input[type="text"],
+      .search-btn,
+      select {
+            padding: 6px;
+            /* Adjusted padding for smaller screens */
+            margin-bottom: 15px;
+            /* Adjusted margin bottom for smaller screens */
+      }
+
+      h1 {
+            margin-top: 20px;
+            /* Adjusted margin top for smaller screens */
+      }
 }

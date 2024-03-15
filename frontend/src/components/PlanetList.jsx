@@ -32,12 +32,13 @@ const PlanetList = () => {
     setSearchQuery(event.target.value);
   };
 
-  const filteredPlanets = planets.filter((planet) =>
-    planet.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  const handlePlanetSelect = (planet) => {
-    setSelectedPlanet(planet);
+  
+  const handlePlanetSelect = () => {
+    let filteredPlanets = planets.filter((planet) =>
+      planet.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    console.log(filteredPlanets)
+    setSelectedPlanet(filteredPlanets[0].name);
   };
 
   return (
@@ -48,6 +49,7 @@ const PlanetList = () => {
         value={searchQuery}
         onChange={handleSearch}
       />
+      <button onClick={handlePlanetSelect}>search</button>
       <div>
         <select
           value={selectedShape}
@@ -85,20 +87,13 @@ const PlanetList = () => {
       </div>
       {selectedPlanet && (
         <div>
-          <h1>{selectedPlanet.name}</h1>
+          <h1>{selectedPlanet}</h1>
           <p>
-            {selectedPlanet.name} has {selectedColor} color and {selectedShape}{" "}
+            {selectedPlanet} has {selectedColor} color and {selectedShape}{" "}
             shape.
           </p>
         </div>
       )}
-      <div>
-        {filteredPlanets.map((planet) => (
-          <div key={planet.id} onClick={() => handlePlanetSelect(planet)}>
-            {planet.name}
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

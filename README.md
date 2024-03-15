@@ -20,9 +20,9 @@ Welcome to PlanetList! This is a React application that allows users to explore 
 ## Demo
 
 <!-- Add link to live demo if available -->
- Check out the [live demo](https://talentrax-frontend.vercel.app) of the PlanetList app! 
+    Check out the [live demo](https://talentrax-frontend.vercel.app) of the PlanetList app! 
  - **run backend-server:**
- start backend server[start](https://talentrax-backend.onrender.com/) of the PlanetList app! 
+    [server start](https://talentrax-backend.onrender.com/) of the PlanetList app! 
 
 ## Installation
 

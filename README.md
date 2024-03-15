@@ -21,6 +21,7 @@ Welcome to PlanetList! This is a React application that allows users to explore 
 
 <!-- Add link to live demo if available -->
  Check out the [live demo](https://talentrax-frontend.vercel.app) of the PlanetList app! 
+ - **run backend-server:**
  start backend server[start](https://talentrax-backend.onrender.com/) of the PlanetList app! 
 
 ## Installation
@@ -29,15 +30,15 @@ To run the application locally, follow these steps:
 
 1. Clone the repository:
 
-git clone <repository-url>
+  git clone <repository-url>
 
 2. Navigate to the project directory:
 
-cd PlanetList
+  cd PlanetList
 
 3. Install dependencies:
 
-npm install
+  npm install
 
 4. Start the development server:
 

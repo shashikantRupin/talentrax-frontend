@@ -19,13 +19,11 @@ Welcome to PlanetList! This is a React application that allows users to explore 
 
 ## Demo
 
-<!-- Add link to live demo if available -->
-    Check out the [live demo](https://talentrax-frontend.vercel.app) of the PlanetList app! 
+ Check out the [live demo](https://talentrax-frontend.vercel.app) of the PlanetList app! 
  - **run backend-server:**
-    [server start](https://talentrax-backend.onrender.com/) of the PlanetList app! 
+    [server start](https://talentrax-backend.onrender.com/) of the PlanetList app 
 
 ## Installation
-
 To run the application locally, follow these steps:
 
 1. Clone the repository:
@@ -57,5 +55,4 @@ To run the application locally, follow these steps:
 Contributions are welcome! Please create a pull request with your suggested changes.
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

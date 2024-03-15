@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import {
   fetchColor,
   fetchPlanets,
   fetchShape,
   fetchSize,
 } from "../redux/action";
+import "./planet.css"; // Import CSS file
 
 const PlanetList = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -32,25 +35,27 @@ const PlanetList = () => {
     setSearchQuery(event.target.value);
   };
 
-  
   const handlePlanetSelect = () => {
     let filteredPlanets = planets.filter((planet) =>
       planet.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
-    console.log(filteredPlanets)
-    setSelectedPlanet(filteredPlanets[0].name);
+    setSelectedPlanet(filteredPlanets[0]?.name); // Use optional chaining to avoid errors if filteredPlanets is empty
   };
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search planet"
-        value={searchQuery}
-        onChange={handleSearch}
-      />
-      <button onClick={handlePlanetSelect}>search</button>
-      <div>
+    <div className="container">
+      <div className="input-container">
+        <input
+          type="text"
+          placeholder="Search planet"
+          value={searchQuery}
+          onChange={handleSearch}
+        />
+        <button className="search-btn" onClick={handlePlanetSelect}>
+          <FontAwesomeIcon icon={faSearch} />
+        </button>
+      </div>
+      <div className="select-container">
         <select
           value={selectedShape}
           onChange={(e) => setSelectedShape(e.target.value)}

@@ -1,12 +1,11 @@
 import { FETCH_COLOR_SUCCESS, FETCH_PLANETS_FAILURE, FETCH_PLANETS_SUCCESS, FETCH_SHAPE_SUCCESS, FETCH_SIZE_SUCCESS } from "./actionType";
 
-// store/reducers.js
 const initialState = {
   searchText: "",
   colors: [],
   shapes: [],
   sizes: [],
-  planets: [], // This should be populated with your planet data from API
+  planets: [], 
   isError:false
 };
 
